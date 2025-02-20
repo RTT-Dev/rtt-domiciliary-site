@@ -482,7 +482,7 @@
             </div><!-- /.site-footer__main -->
             <div class="site-footer__bottom">
                 <div class="container">
-                    <p>Route To Transition <i class="far fa-copyright"></i> 2025 All Right Reserved</p>
+                    <p>Route To Transition <i class="far fa-copyright"></i> <span id="year"></span> All Right Reserved</p>
                     <ul class="list-unstyled site-footer__menu">
                         <li><a href="#" data-toggle="modal" data-target="#ts-modal">Terms of Service</a></li>
                         <li><a href="#" data-toggle="modal" data-target="#pp-modal">Privacy Policy</a></li>
@@ -506,12 +506,12 @@
         </div><!-- /.side-menu__block-overlay -->
         <div class="side-menu__block-inner ">
 
-            <a href="#" class="side-menu__logo"><img src="assets/images/light-logo-1-1.png" alt=""
+            <a href="#" class="side-menu__logo"><img src="assets/images/rtt-logo-light.png" alt=""
                     width="190"></a>
             <nav class="mobile-nav__container">
                 <!-- content is loading via js -->
             </nav>
-            <p class="side-menu__block__copy">(c) 2025 <a href="#">Route To Transition</a> - All rights reserved.</p>
+            <p class="side-menu__block__copy">(c) <span id="year"></span> <a href="#">Route To Transition</a> - All rights reserved.</p>
             <div class="side-menu__social">
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
                 <a href="#"><i class="fab fa-google-plus"></i></a>
@@ -653,6 +653,9 @@
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/swiper.min.js"></script>
     <script src="assets/js/theme.js"></script>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
 </body>
 
 </html>
